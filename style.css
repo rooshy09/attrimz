@@ -1,0 +1,449 @@
+
+
+html {
+    background-color: black;
+}
+
+
+body{
+    margin:0;  /*This got rid of the cream sliver at the top */
+}
+
+/*INDEX.HTML CODE */
+/*NAVBAR GOODNESS*/
+.navbar{
+    background-color: white;
+    padding-right:20px;
+    padding-left:20px;
+    border-bottom: 2.5px solid black;
+    /* height: 55px; This is a height */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navleft {
+    display:flex;
+    align-items: center;
+
+}
+
+.navlink {
+    display:flex;
+    align-items: center;
+}
+
+.navright {
+    display:flex;
+    align-items: center;
+}
+
+.navright a{
+    margin-left: 14px;
+}
+
+.social img{
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.bookbutt{
+    background:white;
+    color:rgb(255, 255, 255);
+    padding:10px 14px; 
+    border-radius:10px;
+    text-decoration: none;
+  border: 2.5px solid black;
+  letter-spacing: 0.08em;
+}
+.bookbutt:hover{
+  opacity: 0.6;
+  border-bottom: 2.5px solid black; /* keeps it consistent */
+}
+
+
+
+.navbar a{
+    color:black;
+    text-decoration: none;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    font-size:20px;
+    /* margin-left:30px; */
+    vertical-align: middle;
+    padding:10px;
+    display:inline-block; /*Maybe keep maybe change */
+    
+    transition:color 200ms ease;
+}
+
+.navbar .logo{
+    display:inline-block;
+    height: 100px;
+    width:auto;
+    /*transform:scale(1.8); /*This makes it look like 150px */
+    transform-origin: left;
+    vertical-align: middle;
+    padding-left:0px;
+}
+
+.navbar .logolink {
+    margin-left:0px;
+    padding:0px;
+}
+
+.navbar a:not(.logolink):not(.bookbutt):not(.social):hover{
+  color: rgba(0, 0, 0, 0.199);
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.199);
+}
+
+
+.navbar a:not(.logolink){
+    margin-left:20px;
+}
+
+
+/*MAIN SECTION GOODNESS*/
+
+
+.mainsection {
+    display:flex;
+    gap:24px;
+    align-items: flex-start;
+    padding:24px 20px;
+    background-color: #0b0b0b;
+    text-decoration: none;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;     
+}
+
+.leftimages {
+    flex:0 0 360px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.leftimages img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:14px;
+    border:2px solid #2a2a2a;
+
+}
+
+
+.rightbr {
+    flex:1;
+    background-color: #111;
+    border: 2px solid #2a2a2a;
+    padding: 26px;
+    border-radius:18px;
+    color:#f3f3f3
+    
+}
+
+.primarybutton{
+  display: block;           /* allows centering via margin auto */
+  width: 70%;
+  max-width: 280px;
+  margin: 0 auto 22px auto; /* center + add space underneath */
+  text-align: center;
+
+  background: #000;
+  color: #fff;
+  padding: 16px 18px;       /* bigger */
+  border-radius: 14px;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  border: 2px solid rgba(255,255,255,0.12);
+}
+
+
+.primarybutton:hover{ opacity: 0.6; }
+
+.rightbr h2{
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+}
+
+.review{
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.review-text{
+  margin: 12px 0 0 0;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+  font-size: 16px;
+}
+
+.review-name{
+  margin: 10px 0 0 0;
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+}
+
+.review hr{
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  margin: 16px 0;
+}
+
+/*THIS IS FOR THE BOTTOM INFOCONTAINER GOODNESS */ 
+
+.infocontainer {
+    display:flex;
+    gap:450px;
+    padding:34px 20px;
+    background-color: #0b0b0b;
+    border-top:1px solid rgba(255,255,255,0.10);
+    max-width:1200px;
+    margin:50px; 
+}
+
+.infoblock h3{
+    font-size: 200%;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    color:white
+
+}
+
+.infoblock p{
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    color:rgba(255,255,255,0.55);
+    font-size:120%;
+}
+
+
+
+
+/*SERVICES.HTML CODE */
+.service {
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    
+}
+
+.hair-description{
+    color:rgba(255,255,255,0.55);
+}
+
+.bookservice{
+    color:white;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    text-decoration: none;
+    display:flex;
+    justify-content:center;
+    font-size: 24px;
+    padding-top:10px;
+}
+
+.bookservice a{
+    border: 1px solid rgba(255,255,255,0.10);
+    padding:20px;
+    border-radius: 10px;
+    
+}
+
+.bookservice:hover{ opacity: 0.75; }
+
+
+/* THIS IS FOR THE CONTACT PAGE */
+.contact {
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:150px;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+}
+
+.contactdetail {
+    color:rgba(255,255,255,0.55);
+}
+
+.leftside {
+    display:flex;
+    flex-direction: column;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+}
+
+.map img{
+    width:667px;
+    height:auto;
+    filter:grayscale(100%);
+    padding-top: 15px;
+}
+
+
+@media (max-width: 800px){
+
+  /* Safety */
+  body{ overflow-x: hidden; }
+  *{ box-sizing: border-box; }
+
+  /* ===== NAVBAR: 2 rows exactly (CSS-only, no HTML changes) ===== */
+
+  /* Flatten wrappers so we can place individual links in a grid */
+  .navleft, .navright, .navlink{ display: contents; }
+
+  .navbar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "logo services book"
+      "ig tiktok contact";
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 10px;
+    padding: 10px 12px;
+  }
+
+  /* Mobile sizing for all navbar links */
+  .navbar a{
+    display: inline-block;
+    margin-left: 0;      /* overrides your desktop margin-left */
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+
+  /* Logo + icons sizing */
+  .navbar .logo{ height: 68px; }
+  .social img{ height: 28px; width: auto; display: block; }
+
+  /* Book button sizing */
+  .bookbutt{
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  /* Hide duplicates on mobile */
+  .navlink a[href="index.html"]{ display: none; }          /* hide Home */
+  .navlink a[href*="setmore.com"]{ display: none; }        /* hide text Book link */
+
+  /* Place items into the grid rows */
+  .logolink{ grid-area: logo; }
+
+  .navlink a[href="services.html"]{
+    grid-area: services;
+    justify-self: center;
+  }
+
+  .bookbutt{
+    grid-area: book;
+    justify-self: end;
+  }
+
+  a.social[href*="instagram.com"]{
+    grid-area: ig;
+    justify-self: start;
+  }
+
+  a.social[href*="tiktok.com"]{
+    grid-area: tiktok;
+    justify-self: center;
+  }
+
+  .navlink a[href="contact.html"]{
+    grid-area: contact;
+    justify-self: end;
+  }
+
+
+  /* ===== HOMEPAGE: stack middle section ===== */
+  .mainsection{
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 14px;
+  }
+
+  .leftimages{
+    flex: none;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .rightbr{
+    width: 100%;
+    padding: 18px;
+  }
+
+  /* Fix long review text overflow */
+  .review-text{
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+
+  /* ===== INFO SECTION: stack ===== */
+  .infocontainer{
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 18px 12px;
+  }
+
+
+  /* ===== CONTACT PAGE: stack + responsive map ===== */
+  .contact{
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px 12px;
+  }
+
+  .map img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Center everything inside the services section */
+.service{
+  text-align: center;
+  padding: 24px 14px;
+}
+
+/* Make descriptions not run full width (this is the main “looks left” culprit) */
+.hair-description{
+  max-width: 42ch;              /* keeps each description as a nice centered paragraph */
+  margin: 10px auto 22px auto;  /* centers the block + adds spacing */
+  line-height: 1.6;
+}
+
+/* Optional: space out the service headings a bit */
+.haircut{
+  margin-top: 28px;
+}
